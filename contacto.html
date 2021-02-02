@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!--BOOTSTRAP 4-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!--GOOGLE FONT-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+        <!--FONT AWSOME-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+        <!--JQUERY-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!--SMTPJS MAIL-->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <!--SWEET ALERT-->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>    
+        <!--MY CSS-->
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/responsive/footer-y-header.css">
+        <link rel="stylesheet" href="css/section/contacto.css">
+        <link rel="stylesheet" href="css/responsive/contacto-responsive.css">
+        <!--MY JAVASCRIPT-->
+        <script src="js/menu-responsive.js"></script>
+        <script src="js/send-mail.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="top-container">       <!--TOP-->
+                <ul>
+                    <li><h2>summer</h2></li>
+                    <li><h1>50%</h1></li>
+                    <li><h2>sale</h2></li>
+                </ul>
+            </div>
+            <div class="menu-responsive">                                   <!--MENU RESPONSIVE-->
+                <h1>Menu</h1><i class="fas fa-align-justify menu-icon-responsive"></i>
+            </div>
+            <nav class="nav">
+                <ul class="nom">                                            <!--NOM-->
+                    <li><h1>Veronica's Sales</h1></li>
+                </ul>
+                <ul class="menu">                                               <!--MENU-->
+                    <li><a href="index.html">Inicio</a></li>
+                    <li id="vestimentas-li">Vestimentas <i class="fas fa-caret-square-down flecha-abajo"></i><i class="fas fa-caret-square-right flecha-costado"></i>
+                        <ul class="sub-menu">                                 <!-- SUB-MENU -->
+                            <li class="vestimentas-sub">Remeras <i class="fas fa-caret-square-down flecha-abajo"></i><i class="fas fa-caret-square-right flecha-costado"></i>
+                                <ul class="vestimentas-sub-li">
+                                    <li><a href="#"> Vacio remeras</a></li>
+                                    <li><a href="#"> Vacio remeras</a></li>
+                                    <li><a href="#"> Vacio remeras</a></li>
+                                    <li><a href="#"> Vacio remeras</a></li>
+                                    <li><a href="#"> Vacio remeras</a></li>
+                                </ul>
+                            </li>
+                            <li class="vestimentas-sub">Jeans <i class="fas fa-caret-square-down flecha-abajo"></i><i class="fas fa-caret-square-right flecha-costado"></i>
+                                <ul class="vestimentas-sub-li">
+                                    <li><a href="#"> Vacio jeans</a></li>
+                                    <li><a href="#"> Vacio jeans</a></li>
+                                    <li><a href="#"> Vacio jeans</a></li>
+                                    <li><a href="#"> Vacio jeans</a></li>
+                                    <li><a href="#"> Vacio jeans</a></li>
+                                </ul>
+                            </li>
+                            <li class="vestimentas-sub">Vestidos <i class="fas fa-caret-square-down flecha-abajo"></i><i class="fas fa-caret-square-right flecha-costado"></i>
+                                <ul class="vestimentas-sub-li">
+                                    <li><a href="#"> Vacio vestidos</a></li>
+                                    <li><a href="#"> Vacio vestidos</a></li>
+                                    <li><a href="#"> Vacio vestidos</a></li>
+                                    <li><a href="#"> Vacio vestidos</a></li>
+                                    <li><a href="#"> Vacio vestidos</a></li>
+                                </ul>
+                            </li>
+                            <li class="vestimentas-sub">Deportivos <i class="fas fa-caret-square-down flecha-abajo"></i><i class="fas fa-caret-square-right flecha-costado"></i>
+                                <ul class="vestimentas-sub-li">
+                                    <li><a href="#"> Vacio deportivos</a></li>
+                                    <li><a href="#"> Vacio deportivos</a></li>
+                                    <li><a href="#"> Vacio deportivos</a></li>
+                                    <li><a href="#"> Vacio deportivos</a></li>
+                                    <li><a href="#"> Vacio deportivos</a></li>
+                                </ul>
+                            </li>
+                            <li class="vestimentas-sub">Calzados <i class="fas fa-caret-square-down flecha-abajo"></i><i class="fas fa-caret-square-right flecha-costado"></i>
+                                <ul class="vestimentas-sub-li">
+                                    <li><a href="#"> Vacio calzados</a></li>
+                                    <li><a href="#"> Vacio calzados</a></li>
+                                    <li><a href="#"> Vacio calzados</a></li>
+                                    <li><a href="#"> Vacio calzados</a></li>
+                                    <li><a href="#"> Vacio calzados</a></li>
+                                </ul>
+                            </li>
+                            <li class="vestimentas-sub">Zapatos <i class="fas fa-caret-square-down flecha-abajo"></i><i class="fas fa-caret-square-right flecha-costado"></i>
+                                <ul class="vestimentas-sub-li">
+                                    <li><a href="#"> Vacio zapatos</a></li>
+                                    <li><a href="#"> Vacio zapatos</a></li>
+                                    <li><a href="#"> Vacio zapatos</a></li>
+                                    <li><a href="#"> Vacio zapatos</a></li>
+                                    <li><a href="#"> Vacio zapatos</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="trabaja.html">Trabaja con nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="sucursales.html">Sucursales</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div class="portada-contacto">
+                <h1>Contactanos</h1>
+                <p>
+                    Nuestro equipo administrativo respondera a la brevedad
+                </p>
+            </div>
+            <div class="cuerpo-container-contacto">
+                <h1>Dejanos tu consulta</h1>
+                <p>Recorda que tambien podes contactarte por redes sociales y whats app. Estamos a tu disposicion</p>
+                <form onsubmit="return false">
+                    <label>Nombre: <input type="text" id="nombre" placeholder="Nombre"></label>
+                    <label>Tu email: <input type="email" id="email" placeholder="Email"></label>
+                    <label>Asunto: <input type="text" id="asunto" placeholder="Asunto"></label>
+                    <label>Mensaje: <textarea id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea></label>
+                    <button id="enviar">Enviar</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-preguntas">
+                    <h1>Preguntas frecuentes</h1>
+                    <li><a href="">Talles</a></li>
+                    <li><a href="">Formas de pago</a></li>
+                    <li><a href="">Tiempo de envio</a></li>
+                    <li><a href="">Miercoles de ofertas</a></li>
+                </div>
+                <div class="footer-redes">
+                    <h1>Recibi nuestras ofertas</h1>
+                    <input type="text" placeholder="Nombre">
+                    <input type="email" placeholder="Email">
+                    <input class="btn-submit" type="submit" value="Susbscribirse">
+                    <h1>Seguinos en:</h1>
+                    <div>
+                        <li><i class="fab fa-facebook-f" id="facebook"></i></li>
+                        <li><i class="fab fa-instagram"></i></li>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-text">
+                <h1>Derechos reservados Walter Diaz 2021 creaciones de muestra como desarrollador web este contenido no refiere a ninguna marca, ni empresa en especial.</h1>
+            </div>
+        </footer>
+    </body>
+</html>
