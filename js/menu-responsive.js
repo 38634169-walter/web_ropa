@@ -1,6 +1,7 @@
 $(document).ready(mostrar_menu);
 
 let num = 0;
+let todo = 0;
 
 function mostrar_menu(){
     
@@ -19,9 +20,28 @@ function mostrar_menu(){
         }
     });
 
+    /*
     $('.vestimentas-sub').click(function(){
         $(this).children('.vestimentas-sub-li').slideToggle();
+        todo = 1;
     });
+    
+    $('#vestimentas-li').click(function(){
+        if ( todo == 0){
+            $('.sub-menu').css({"display":"block"});
+            todo = 1;
+        }
+        if(todo == 2){
+            $('.sub-menu').css({"display":"none"});
+            todo = 0;
+        }
+    });
+    */ 
+    $('.dropbtn').click(function(){
+        /*$('.dropdown').toggleClass("display");*/
+    });
+
+
 
 }
 

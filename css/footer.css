@@ -53,17 +53,27 @@ footer{
     justify-content: center;
     justify-items: center;
 }
-.footer-redes>input{
+.footer-redes>form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+.footer-redes>form>input{
     width:60%;
     margin:auto;
     margin-top:10px;
     border-radius: 15px;
     padding-left:10px;
 }
-.btn-submit{
+.footer-redes>form>button{
     border-radius: 15px;
-    font-size: calc(1vw + 4px);
+    font-size: calc(1vw + 11px);
     cursor:pointer;
+    width:60%;
+    margin:auto;
+    margin-top:10px;
+    border-radius: 15px;
 }
 
 
@@ -73,10 +83,11 @@ footer{
    justify-content: center;
    justify-items: center;
 }
-.footer-redes>div>li{
+.footer-redes>div>a{
     margin:0px 10px;
+    text-decoration: none;
 }
-.footer-redes>div>li>i{
+.footer-redes>div>a>i{
     color:white;
     border:2px solid white;
     border-radius:35px;
@@ -85,7 +96,7 @@ footer{
     transition:all 1s;
     cursor :pointer;
 }
-.footer-redes>div>li>i:hover{
+.footer-redes>div>a>i:hover{
     transform: scale(1.8);
 }
 #facebook{

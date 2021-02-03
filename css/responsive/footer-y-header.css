@@ -60,6 +60,17 @@
         display:contents;
         position:relative;
     }
+    .display{
+        display:block;
+    }
+    .dropdown{
+        position:relative;
+        top:0;
+        left:0;
+        transition: none;
+        visibility: visible;
+        display:none;
+    }
 
 
 
@@ -129,7 +140,7 @@
     .footer-preguntas>li>a{
         font-size: calc(1vw + 12px);
     }
-    .btn-submit{
+    .footer-redes>form>button{
         font-size: calc(1vw + 14px);
     }
     
@@ -147,7 +158,7 @@
 @media all and(max-width:400px){
     /*   FOOTER   /////////////////////////////////////////////////////////////////*/
     
-    .footer-redes>div>li>i{
+    .footer-redes>div>a>i{
         font-size: calc(1vw + 15px);
         padding:10px;
     }

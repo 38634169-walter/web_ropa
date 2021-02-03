@@ -14,6 +14,10 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
         <!--JQUERY-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!--SMTPJS MAIL-->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <!--SWEET ALERT-->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>   
         <!--MY CSS-->
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/footer.css">
@@ -26,6 +30,7 @@
         <script src="js/slider-portada.js"></script>
         <script src="js/slider-ropa-especial.js"></script>
         <script src="js/slider-ropa-especial2.js"></script>
+        <script src="js/newsletter.js"></script>
     </head>
     <body>
         <header>
@@ -45,10 +50,10 @@
                 </ul>
                 <ul class="menu">                                               <!--MENU-->
                     <li><a href="index.html">Inicio</a></li>
-                    <li id="vestimentas-li">Vestimentas <i class="fas fa-caret-square-down flecha-abajo"></i><i class="fas fa-caret-square-right flecha-costado"></i>
-                        <ul class="sub-menu">                                 <!-- SUB-MENU -->
-                            <li class="vestimentas-sub">Remeras <i class="fas fa-caret-square-down flecha-abajo"></i><i class="fas fa-caret-square-right flecha-costado"></i>
-                                <ul class="vestimentas-sub-li">
+                    <li class="dropbtn">Vestimentas <i class="fas fa-caret-square-down flecha-abajo"></i><i class="fas fa-caret-square-right flecha-costado"></i>
+                        <ul class="dropdown">                                 <!-- SUB-MENU -->
+                            <li class="dropbtn2">Remeras <i class="fas fa-caret-square-down flecha-abajo"></i><i class="fas fa-caret-square-right flecha-costado"></i>
+                                <ul class="dropdown2">
                                     <li><a href="#"> Vacio remeras</a></li>
                                     <li><a href="#"> Vacio remeras</a></li>
                                     <li><a href="#"> Vacio remeras</a></li>
@@ -165,12 +170,10 @@
                 <li><i class="fas fa-chevron-right flecha-derecha"></i><i class="fas fa-chevron-left flecha-izquierda"></i></li>
             </ul>
             <div class="paginacion">                            <!--SLIDER PORTADA paginacion-->
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
             </div>
         </header>
         <section>
@@ -181,31 +184,29 @@
                     </ul>
                 </div>
                 <div class="section1-right">
-                    <li><h1>No olvides visitarnos los Miercoles de ofertas</h1></li>
-                    <li>
-                        <p>
-                            En Victoria's durante toda la semana preparamos Ofertas
-                            especiales que liberamos los Miercoles para vos, no
-                            olvides pasar antes de que se agoten 
-                        </p>
-                    </li>
-                    <li class="section1-img"><img src="imagenes/Relleno/relleno3.jpg" alt=""></li>
+                    <h1>No olvides visitarnos los Miercoles de ofertas</h1>
+                    <p>
+                        En Victoria's durante toda la semana preparamos Ofertas
+                        especiales que liberamos los Miercoles para vos, no
+                        olvides pasar antes de que se agoten 
+                    </p>
+                    <img src="imagenes/Relleno/relleno3.jpg" alt="">
                 </div>
             </div>
             <div class="ventas-img-container">                                  <!-- VENTAS IMG -->
-                <li><img src="imagenes/Sin fondo/2.png" alt=""></li>
+                <img src="imagenes/Sin fondo/2.png" alt="">
             </div>
             <div class="ropa-container">                            <!--ROPA CONTAINER-->
                 <li><img src="imagenes/Items-ropa/1.JPG" alt=""><h1>Conjunto 1</h1><p>Solo por $1799</p></li>
-                <li><img src="imagenes/Items-ropa/2.JPG" alt=""><h1>Conjunto 2</h1><p>Solo por $1699</p></li>
-                <li><img src="imagenes/Items-ropa/3.JPG" alt=""><h1>Conjunto 3</h1><p>Solo por $1399</p></li>
-                <li><img src="imagenes/Items-ropa/4.JPG" alt=""><h1>Conjunto 4</h1><p>Solo por $999</p></li>
-                <li><img src="imagenes/Items-ropa/5.JPG" alt=""><h1>Conjunto 5</h1><p>Solo por $999</p></li>
-                <li><img src="imagenes/Items-ropa/6.JPG" alt=""><h1>Conjunto 6</h1><p>Solo por $999</p></li>
-                <li><img src="imagenes/Items-ropa/7.JPG" alt=""><h1>Conjunto 7</h1><p>Solo por $1999</p></li>
-                <li><img src="imagenes/Items-ropa/8.JPG" alt=""><h1>Conjunto 8</h1><p>Solo por $1999</p></li>
-                <li><img src="imagenes/Items-ropa/9.JPG" alt=""><h1>Conjunto 9</h1><p>Solo por $1999</p></li>
-                <li><img src="imagenes/Items-ropa/10.JPG" alt=""><h1>Conjunto 10</h1><p>Solo por $1999</p></li>
+                <li><img src="imagenes/Items-ropa/2.png" alt=""><h1>Conjunto 2</h1><p>Solo por $1699</p></li>
+                <li><img src="imagenes/Items-ropa/3.png" alt=""><h1>Conjunto 3</h1><p>Solo por $1399</p></li>
+                <li><img src="imagenes/Items-ropa/4.jpg" alt=""><h1>Conjunto 4</h1><p>Solo por $999</p></li>
+                <li><img src="imagenes/Items-ropa/5.jpg" alt=""><h1>Conjunto 5</h1><p>Solo por $999</p></li>
+                <li><img src="imagenes/Items-ropa/6.jpg" alt=""><h1>Conjunto 6</h1><p>Solo por $999</p></li>
+                <li><img src="imagenes/Items-ropa/7.jpg" alt=""><h1>Conjunto 7</h1><p>Solo por $1999</p></li>
+                <li><img src="imagenes/Items-ropa/8.jpg" alt=""><h1>Conjunto 8</h1><p>Solo por $1999</p></li>
+                <li><img src="imagenes/Items-ropa/9.jpg" alt=""><h1>Conjunto 9</h1><p>Solo por $1999</p></li>
+                <li><img src="imagenes/Items-ropa/10.jpg" alt=""><h1>Conjunto 10</h1><p>Solo por $1999</p></li>
                 <li><img src="imagenes/Items-ropa/11.JPG" alt=""><h1>Conjunto 11</h1><p>Solo por $1999</p></li>
                 <li><img src="imagenes/Items-ropa/12.JPG" alt=""><h1>Conjunto 12</h1><p>Solo por $1499</p></li>
                 <li><img src="imagenes/Items-ropa/13.JPG" alt=""><h1>Conjunto 13</h1><p>Solo por $1999</p></li>
@@ -221,12 +222,12 @@
                 <h1>Diseños especiales</h1>
                 <div class="slider-ropa-especial">
                     <ul>
-                        <li class="vestidos-especiales"><img src="imagenes/Items-ropa/15.JPG" alt=""><h1>Conjunto 15</h1><p>Solo por $1999</p></li>
-                        <li class="vestidos-especiales"><img src="imagenes/Items-ropa/16.JPG" alt=""><h1>Conjunto 16</h1><p>Solo por $1999</p></li>
-                        <li class="vestidos-especiales"><img src="imagenes/Items-ropa/17.JPG" alt=""><h1>Conjunto 17</h1><p>Solo por $1999</p></li>
-                        <li class="vestidos-especiales"><img src="imagenes/Items-ropa/18.JPG" alt=""><h1>Conjunto 18</h1><p>Solo por $1999</p></li>
-                        <li class="vestidos-especiales"><img src="imagenes/Items-ropa/19.JPG" alt=""><h1>Conjunto 19</h1><p>Solo por $2299</p></li>
-                        <li class="vestidos-especiales"><img src="imagenes/Items-ropa/20.JPG" alt=""><h1>Conjunto 20</h1><p>Solo por $2299</p></li>
+                        <li class="vestidos-especiales"><img src="imagenes/Items-ropa/especiales1.jpg" alt=""><h1>Conjunto 15</h1><p>Solo por $1999</p></li>
+                        <li class="vestidos-especiales"><img src="imagenes/Items-ropa/especiales2.jpg" alt=""><h1>Conjunto 16</h1><p>Solo por $1999</p></li>
+                        <li class="vestidos-especiales"><img src="imagenes/Items-ropa/especiales3.jpg" alt=""><h1>Conjunto 17</h1><p>Solo por $1999</p></li>
+                        <li class="vestidos-especiales"><img src="imagenes/Items-ropa/especiales4.jpg" alt=""><h1>Conjunto 18</h1><p>Solo por $1999</p></li>
+                        <li class="vestidos-especiales"><img src="imagenes/Items-ropa/especiales5.jpg" alt=""><h1>Conjunto 19</h1><p>Solo por $2299</p></li>
+                        <li class="vestidos-especiales"><img src="imagenes/Items-ropa/especiales6.jpg" alt=""><h1>Conjunto 20</h1><p>Solo por $2299</p></li>
                     </ul>
                 </div>
                 <ul class="flechas-diseños-especiales">
@@ -237,12 +238,12 @@
                 <h1>Diseños especiales</h1>
                 <div class="slider-ropa-especial2">
                     <ul>
-                        <li class="vestidos-especiales2"><img src="imagenes/Items-ropa/15.JPG" alt=""><h1>Conjunto 15</h1><p>Solo por $1999</p></li>
-                        <li class="vestidos-especiales2"><img src="imagenes/Items-ropa/16.JPG" alt=""><h1>Conjunto 16</h1><p>Solo por $1999</p></li>
-                        <li class="vestidos-especiales2"><img src="imagenes/Items-ropa/17.JPG" alt=""><h1>Conjunto 17</h1><p>Solo por $1999</p></li>
-                        <li class="vestidos-especiales2"><img src="imagenes/Items-ropa/18.JPG" alt=""><h1>Conjunto 18</h1><p>Solo por $1999</p></li>
-                        <li class="vestidos-especiales2"><img src="imagenes/Items-ropa/19.JPG" alt=""><h1>Conjunto 19</h1><p>Solo por $2299</p></li>
-                        <li class="vestidos-especiales2"><img src="imagenes/Items-ropa/20.JPG" alt=""><h1>Conjunto 20</h1><p>Solo por $2299</p></li>
+                        <li class="vestidos-especiales2"><img src="imagenes/Items-ropa/especiales1.jpg" alt=""><h1>Conjunto 15</h1><p>Solo por $1999</p></li>
+                        <li class="vestidos-especiales2"><img src="imagenes/Items-ropa/especiales2.jpg" alt=""><h1>Conjunto 16</h1><p>Solo por $1999</p></li>
+                        <li class="vestidos-especiales2"><img src="imagenes/Items-ropa/especiales3.jpg" alt=""><h1>Conjunto 17</h1><p>Solo por $1999</p></li>
+                        <li class="vestidos-especiales2"><img src="imagenes/Items-ropa/especiales4.jpg" alt=""><h1>Conjunto 18</h1><p>Solo por $1999</p></li>
+                        <li class="vestidos-especiales2"><img src="imagenes/Items-ropa/especiales5.jpg" alt=""><h1>Conjunto 19</h1><p>Solo por $2299</p></li>
+                        <li class="vestidos-especiales2"><img src="imagenes/Items-ropa/especiales6.jpg" alt=""><h1>Conjunto 20</h1><p>Solo por $2299</p></li>
                     </ul>
                 </div>
                 <ul class="flechas-diseños-especiales2">
@@ -253,21 +254,23 @@
         <footer>
             <div class="footer-container">
                 <div class="footer-preguntas">
-                    <h1>Preguntas frecuentes</h1>
-                    <li><a href="">Talles</a></li>
-                    <li><a href="">Formas de pago</a></li>
-                    <li><a href="">Tiempo de envio</a></li>
-                    <li><a href="">Miercoles de ofertas</a></li>
+                    <h1>Enlaces disponibles</h1>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sucursales.html">Sucursales</a></li>
+                    <li><a href="trabaja.html">Trabaja con nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </div>
                 <div class="footer-redes">
                     <h1>Recibi nuestras ofertas</h1>
-                    <input type="text" placeholder="Nombre">
-                    <input type="email" placeholder="Email">
-                    <input class="btn-submit" type="submit" value="Susbscribirse">
+                    <form onsubmit="return false">
+                        <input type="text" placeholder="Nombre" id="nombre2">
+                        <input type="email" placeholder="Email" id="email2">
+                        <button id="suscribirse">Suscribirse</button>
+                    </form>
                     <h1>Seguinos en:</h1>
                     <div>
-                        <li><i class="fab fa-facebook-f" id="facebook"></i></li>
-                        <li><i class="fab fa-instagram"></i></li>
+                        <a href="https://www.facebook.com"><i class="fab fa-facebook-f" id="facebook"></i></a>
+                        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>

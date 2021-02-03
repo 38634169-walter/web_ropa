@@ -34,12 +34,16 @@ function send_curriculum(){
                 icon: 'success',
                 title: 'Tu curriculum se envio con exito',
                 showConfirmButton: true,
-                timer: 10500
               })
 
         }
         else{
-            throw new Error("Error: " + response.statusText);
+          Swal.fire({
+            position: 'center',
+            icon: 'error',
+            title: 'Error al enviar curriculum',
+            showConfirmButton: true,
+          })
         }
     });
 }

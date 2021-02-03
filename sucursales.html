@@ -15,6 +15,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
         <!--JQUERY-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!--SMTPJS MAIL-->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <!--SWEET ALERT-->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>    
         <!--MY CSS-->
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/footer.css">
@@ -23,6 +27,7 @@
         <link rel="stylesheet" href="css/responsive/sucursales-responsive.css">
         <!--MY JAVASCRIPT-->
         <script src="js/menu-responsive.js"></script>
+        <script src="js/newsletter.js"></script>
     </head>
     <body>
         <header>
@@ -213,21 +218,23 @@
         <footer>
             <div class="footer-container">
                 <div class="footer-preguntas">
-                    <h1>Preguntas frecuentes</h1>
-                    <li><a href="">Talles</a></li>
-                    <li><a href="">Formas de pago</a></li>
-                    <li><a href="">Tiempo de envio</a></li>
-                    <li><a href="">Miercoles de ofertas</a></li>
+                    <h1>Enlaces disponibles</h1>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sucursales.html">Sucursales</a></li>
+                    <li><a href="trabaja.html">Trabaja con nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </div>
                 <div class="footer-redes">
                     <h1>Recibi nuestras ofertas</h1>
-                    <input type="text" placeholder="Nombre">
-                    <input type="email" placeholder="Email">
-                    <input class="btn-submit" type="submit" value="Susbscribirse">
+                    <form onsubmit="return false">
+                        <input type="text" placeholder="Nombre" id="nombre2">
+                        <input type="email" placeholder="Email" id="email2">
+                        <button id="suscribirse">Suscribirse</button>
+                    </form>
                     <h1>Seguinos en:</h1>
                     <div>
-                        <li><i class="fab fa-facebook-f" id="facebook"></i></li>
-                        <li><i class="fab fa-instagram"></i></li>
+                        <a href="https://www.facebook.com"><i class="fab fa-facebook-f" id="facebook"></i></a>
+                        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>

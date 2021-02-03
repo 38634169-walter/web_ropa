@@ -120,9 +120,33 @@ nav>ul{
     text-decoration:none;
     
 }
-.menu>li:hover .sub-menu{
+
+
+
+
+
+
+/*////////////////////////
+/////////////////////////
+////////////////////////////////////////////////////////////*/
+
+
+.display{
     display:block;
 }
+
+.dropdown , .dropdown2{
+    position:absolute;
+    visibility: hidden;
+}
+
+menu>li:hover .dropdown{
+    visibility: visible;
+}
+.dropdown>li:hover .dropdown2{
+    visibility: visible;
+}
+
 .flecha-abajo{
     display:none;
 }
@@ -141,7 +165,6 @@ nav>ul{
     border: 2px solid white;
     border-radius: 15px;
     display:none;
-    
 }
 
 .sub-menu>li{
@@ -382,16 +405,13 @@ nav>ul{
     margin:auto;
     border-radius: 15px;
     background:rgba(255, 127, 148, 0.788);
-    top:-3cm
+    top:-3cm;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
-.paginacion>ul{
-    position:absolute;
-    left:0;
-    right:0;
-    text-align:center;
-    top:-0.1cm;
-}
-.paginacion>ul>li{
+
+.paginacion>li{
     width:0.5cm;
     height:0.5cm;
     background:red;

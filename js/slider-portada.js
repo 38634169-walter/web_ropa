@@ -1,10 +1,10 @@
 $(document).ready(slider_portada);
 
 var indice=0;
-$('.paginacion ul li').eq(0).css({'background':'pink'});
 
 function slider_portada(){
-
+    $('.paginacion li').eq(0).css({'background':'pink'});
+    
     $('.flecha-derecha').click(function(){
         indice++;
         if(indice > 3){
@@ -13,8 +13,8 @@ function slider_portada(){
         $('.slider').hide();
         $('.slider').eq(indice).fadeIn();
 
-        $('.paginacion ul li').css({'background':'red'});
-        $('.paginacion ul li').eq(indice).css({'background':'pink'});
+        $('.paginacion li').css({'background':'red'});
+        $('.paginacion li').eq(indice).css({'background':'pink'});
     });
     $('.flecha-izquierda').click(function(){
         indice--;
@@ -24,14 +24,14 @@ function slider_portada(){
         $('.slider').hide();
         $('.slider').eq(indice).fadeIn();
 
-        $('.paginacion ul li').css({'background':'red'});
-        $('.paginacion ul li').eq(indice).css({'background':'pink'});
+        $('.paginacion li').css({'background':'red'});
+        $('.paginacion li').eq(indice).css({'background':'pink'});
     });
 
-    $('.paginacion ul li').click(function(){
+    $('.paginacion li').click(function(){
         indice = $(this).index();
-        $('.paginacion ul li').css({'background':'red'});
-        $('.paginacion ul li').eq(indice).css({'background':'pink'});
+        $('.paginacion li').css({'background':'red'});
+        $('.paginacion li').eq(indice).css({'background':'pink'});
 
         $('.slider').hide();
         $('.slider').eq(indice).fadeIn();
@@ -46,7 +46,7 @@ function slider_portada(){
         $('.slider').hide();
         $('.slider').eq(indice).fadeIn();
 
-        $('.paginacion ul li').css({'background':'red'});
-        $('.paginacion ul li').eq(indice).css({'background':'pink'});
+        $('.paginacion li').css({'background':'red'});
+        $('.paginacion li').eq(indice).css({'background':'pink'});
     },3000);
 }

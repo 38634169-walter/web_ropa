@@ -4,15 +4,12 @@
 
 
 .section1-container{
-    width:100%;
-    height:12cm;
     background: linear-gradient(20deg , pink 25%, white 45%, pink 25%);
     background-size: cover;
-}
-
-.section1-container>div{
-    float:left;
-    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:1cm 0px;
 }
 
 /* LEFT 1 */
@@ -21,7 +18,6 @@
     width:40%;
 }
 .section1-left>ul{
-    position:relative;
     width:9cm;
     height:12cm;
     margin:auto;
@@ -35,34 +31,31 @@
 /* RIGHT */
 .section1-right{
     width:60%;    
-    padding-top:0.5cm;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
 }
 
-
-.section1-right>li{
-    width:70%;
-    margin:auto;
-    margin-top:15px;
-}
-
-.section1-right>li>h1{
+.section1-right>h1{
     font-size:calc(1vw + 19px);
     color:white;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 12px black;
+    font-family: 'Fredoka One', cursive;
+    padding:0px 20px;
 }
-.section1-right>li>p{
+.section1-right>p{
     font-size:calc(1vw + 7px);
+    padding:0px 20px;
 }
 
-.section1-img{
-    width:100%;
-    height:5cm;
-    
+.section1-right>img{
+    width:11cm;
+    height:6cm;
+    border-radius:100%;
 }
-.section1-img>img{
-    width:100%;
-    height:100%;
-}
+
 
 /*   VENTAS IMAGEN   /////////////////////////////////////////////////////////////////*/
 
@@ -71,7 +64,7 @@
     position:relative;
     margin-top:1cm;
 }
-.ventas-img-container>li>img{
+.ventas-img-container>img{
     display:block;
     margin-left: auto;
     margin-right: auto;
@@ -96,12 +89,17 @@
 }
 .ropa-container>li>img{
     position:relative;
+    border-radius: 35px;
 }
 .ropa-container>li>h1{
     padding-top:10px;
     font-size: calc(1vw + 7px);
+    color:white;
+    text-shadow: 2px 2px 12px black;
 }
 .ropa-container>li>p{
+    box-shadow: 5px 10px 15px black;
+    border:1px solid white;
     background:rgba(255, 255, 255, 0.384);
     border-radius: 15px;
     font-size: calc(1vw + 5px);
@@ -140,6 +138,12 @@
     width:165%;
     overflow: hidden;
 }
+.slider-ropa-especial>ul>li{
+    border-radius: 25px;
+}
+.slider-ropa-especial>ul>li>img{
+    border-radius: 25px;
+}
 .vestidos-especiales{
     margin:5px;
     background:rgba(255, 255, 255, 0.733);
@@ -149,10 +153,14 @@
     font-size:calc(1vw + 7px);
     padding-left: 10px;
     padding-top: 10px;
+    color:white;
+    text-shadow:2px 2px 12px black;
 }
 .vestidos-especiales>p{
     font-size:calc(1vw + 7px);
     padding-left: 10px;
+    box-shadow: 5px 10px 15px black;
+    border:1px solid white;
 }
 
 
@@ -187,6 +195,6 @@
 
     /*   DISEÑOS ESPECIALES2   /////////////////////////////////////////////////////////////////*/
 
-    .diseños-especiales-container2{
-        display:none;
-    }
+.diseños-especiales-container2{
+    display:none;
+}
