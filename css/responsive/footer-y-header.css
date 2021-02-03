@@ -60,36 +60,31 @@
         display:contents;
         position:relative;
     }
-    .display{
-        display:block;
-    }
-    .dropdown{
-        position:relative;
-        top:0;
-        left:0;
-        transition: none;
-        visibility: visible;
-        display:none;
-    }
+
+
 
 
 
 
     /* SUB-MENU */
-
     .sub-menu{
         position:relative;
         border: none;
         margin-top:1cm;
         width:100%;
+        transition: none;
+        visibility: visible;
+        display:none;
     }
 
-    .sub-menu>li>ul{
+    .sub-menu2{
         position:relative;
         left:0;
         border: none;
         background: plum;
         margin-top:0.5cm;
+        visibility: visible;
+        display:none;
     }
     .sub-menu>li{
         display:flex;
@@ -98,13 +93,12 @@
     .sub-menu>li>.flecha-abajo{
         display: contents;
     }
-    .sub-menu>li>ul>li:hover{
+    .sub-menu2>li:hover{
         background:pink;
     }
-    .sub-menu>li:hover >ul{
-        display:none;
+    .add-display{
+        display: block;
     }
-
 
 
     /* NOM */

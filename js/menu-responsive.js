@@ -38,7 +38,11 @@ function mostrar_menu(){
     });
     */ 
     $('.dropbtn').click(function(){
-        /*$('.dropdown').toggleClass("display");*/
+        $('.sub-menu2').removeClass('add-display');
+        $('.sub-menu').toggleClass('add-display');
+    });
+    $('.dropbtn2').click(function(){
+        $('.sub-menu2').toggleClass('add-display');
     });
 
 
