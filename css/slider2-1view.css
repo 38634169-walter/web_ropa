@@ -28,7 +28,9 @@
         border-radius:15px;
         padding:0.5cm;
         margin-bottom:1cm;
-        font-size: 23px;
+        font-size: calc(1vw + 18px);
+        font-family: 'Fredoka One', cursive;
+        text-shadow:2px 2px 12px white;
     }
     
     /*USED*/

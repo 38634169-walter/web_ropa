@@ -119,21 +119,19 @@ nav>div{
     color:white;
     text-decoration:none;
 }
-.menu>div>div>i{
-    font-size: calc(1vw + 13px);
-    color:white;
-}
 
 .menu>div>div>a:hover{
     color:aquamarine;
     cursor:pointer;
 }
 /* flechas menu */
+
 .arrow-down-sub-menu1 , .arrow-side-sub-menu1{
     position:absolute;
     right:0;
     padding-right:5px;
-    font-size:calc(1vw + 25px);
+    font-size:calc(1vw + 20px);
+    padding-top:8px;
     top:0px;
     color:white;
     display:none;
@@ -188,7 +186,8 @@ nav>div{
     position:absolute;
     right:0;
     padding-right:5px;
-    font-size:calc(1vw + 25px);
+    padding-top:8px;
+    font-size:calc(1vw + 20px);
     top:0px;
     color:white;
     display:none;

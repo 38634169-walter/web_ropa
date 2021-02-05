@@ -42,6 +42,7 @@ function send_curriculum(){
             position: 'center',
             icon: 'error',
             title: 'Error al enviar curriculum',
+            text:'Verifica que tus datos esten completos y sean correctos',
             showConfirmButton: true,
           })
         }

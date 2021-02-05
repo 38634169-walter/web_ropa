@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded',function(){
               position: 'center',
               icon: 'error',
               title: 'Error al suscribirse',
+              text:'Verifica que tus datos esten completos y sean correctos',
               showConfirmButton: true,
             })
           }

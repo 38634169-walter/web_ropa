@@ -33,6 +33,7 @@ function send_mail(){
                     position: 'center',
                     icon: 'error',
                     title: 'Error al enviar el mail',
+                    text:'Verifica que tus datos esten completos y sean correctos',
                     showConfirmButton: true,
                   })
             }
