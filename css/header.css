@@ -24,7 +24,7 @@ body{
     width:100%;
     height:1.5cm;
     position:relative;
-    z-index:111111;
+    z-index:3;
 }
 
 .top-container>ul{
@@ -70,6 +70,8 @@ body{
 
 /*   MENU   /////////////////////////////////////////////////////////////////*/
 
+/* menu container */ 
+
 nav{
     width:80%;
     margin:auto;
@@ -80,11 +82,11 @@ nav{
     border-left:1px solid white;
     height:3cm;
     position:relative;
-    z-index:1000000;
+    z-index:10000;
 }
 
-nav>ul{
-    height:100%;
+nav>div{
+    height:1cm;
     margin-top:2cm;
     animation:textt 2s;
 }
@@ -95,108 +97,154 @@ nav>ul{
     }
 }
 
+
+/* menu */
+
 .menu{
     float:right;
-    width:60%;
+    width:70%;
 }
-
-.menu>li{
+.menu>div{
     position:relative;
     display:inline-block;
     padding:5px;
     font-size: calc(1vw + 3px);
     color:white;
+    cursor:pointer;
 }
-.menu>li:hover{
-    color:aquamarine;
-    cursor: pointer;
-}
-.menu>li>a{
-    color:white;
+
+.menu>div>div>a{
+    padding:5px;
     font-size: calc(1vw + 3px);
-}
-.menu>li>a:hover{
-    color:aquamarine;
-    text-decoration:none;
-    
-}
-
-.flecha-abajo{
-    display:none;
-}
-.flecha-costado{
-    display:none;
-}
-.menu>li:hover .sub-menu{
-    visibility: visible;
-}
-
-/*SUB MENU*/
-.sub-menu{
-    width:150%;
-    position:absolute;
-    z-index:1000;
-    padding:8px 0;
-    background:rgba(255, 192, 203, 0.815);
-    border: 2px solid white;
-    border-radius: 15px;
-    visibility: hidden;
-}
-
-.sub-menu>li{
-    position:relative;
     color:white;
-    text-shadow: 2px 2px 2px black;
-    padding:5px 3px;
+    text-decoration:none;
 }
-.sub-menu>li:hover{
-    background:plum;
+.menu>div>div>i{
+    font-size: calc(1vw + 13px);
+    color:white;
 }
 
-.sub-menu>li:hover .sub-menu2{
+.menu>div>div>a:hover{
+    color:aquamarine;
+    cursor:pointer;
+}
+/* flechas menu */
+.arrow-down-sub-menu1 , .arrow-side-sub-menu1{
+    position:absolute;
+    right:0;
+    padding-right:5px;
+    font-size:calc(1vw + 25px);
+    top:0px;
+    color:white;
+    display:none;
+}
+
+
+
+/*   SUB-MENU1   ///////////////////////////////////*/
+
+.menu>div:hover .sub-menu{
     visibility:visible;
 }
 
-/*SUB MENU2 */
-.sub-menu2{
-    width:180%;
+.sub-menu1{
+    width:190%;
+    position:absolute;
+    z-index:1000;
+    padding:8px 0;
+    background:rgb(255, 192, 203);
+    border: 2px solid white;
+    border-radius: 15px;
+    visibility:hidden;
+}
+.sub-menu1>li{
+    position:relative;
+}
+
+/* textos */
+.sub-menu1>li>div{
+    display:flex;
+    justify-content:left;
+    align-items: center;
+}
+.sub-menu1>li>div:hover{
+    background:violet;
+}
+.sub-menu1>li>div>a{
+    padding-left:20px;
+    text-decoration:none;
+}
+.sub-menu1>li>div>a:hover{
+    padding-left:30px;
+    cursor:pointer;
+}
+.sub-menu1>li>div>img{
+    margin-left:20px;
+}
+
+/* flechas submenu1 */
+
+.down1 , .down2 , .down3 , .down4 , .down5, .down6 , .side1 , .side2 , .side3 , .side4 , .side5 , .side6{
+    position:absolute;
+    right:0;
+    padding-right:5px;
+    font-size:calc(1vw + 25px);
+    top:0px;
+    color:white;
+    display:none;
+}
+
+
+
+/* sub-menu-1-INDICE */
+
+.sub-menu1>li:hover ul{
+    visibility: visible;
+}
+.sub-menu1>li>ul{
+    width:150%;
     position:absolute;
     left:100%;
     top:0;
-    padding:8px 0;
+    background:pink;
     border:2px solid white;
-    border-radius: 15px;
-    background: rgba(255, 192, 203, 0.808);
+    border-radius:15px;
     visibility:hidden;
-}
-.sub-menu2>li{
-    padding:5px 3px;
-}
-.sub-menu2>li:hover{
-    background: plum;
+    padding:10px 0px;
 }
 
-.sub-menu2>li>a:hover{
-    text-decoration: none;
+.sub-menu1>li>ul>div{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.sub-menu2>li>a{
+
+.sub-menu1>li>ul>div>a{
     color:white;
-    padding-left: 5px;
+    text-decoration:none;
+    padding-left:20px;
+    width:100%;
 }
+.sub-menu1>li>ul>div>a:hover{
+    color:aquamarine;
+    padding-left:30px;
+}
+
+
+
+
+
 /*nom*/
 .nom{
     float:left;
     width:30%;
-    height: 100%;
-}
-.nom>li{
-    height: 100%;
 }
 .nom>li>h1{
     color:white;
     text-shadow: 5px 5px 9px black;
     font-size:calc(1vw + 14px);
     padding-left: 15px;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
 /*   SLIDER   /////////////////////////////////////////////////////////////////*/

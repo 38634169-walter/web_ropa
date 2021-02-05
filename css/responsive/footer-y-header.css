@@ -1,117 +1,154 @@
 @media all and (max-width:800px){
 
-    .menu-responsive{
-        display:block;
-        top:0;
+    /*   MENU-RESPONSIVE   /////////////////////////////////////////////////////////////////*/
+    
+    .menu-responsive{ 
         width:100%;
-        position:fixed;
-        padding:10px;
+        top:0;
+        height:60px;
         background:pink;
-        border-bottom:2px solid white;
-        z-index:1000000;
+        position:absolute;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index:6;
+        position:fixed;
     }
-
     .menu-responsive>h1{
         color:white;
-        font-size: 30px;
-        float:left;
+        font-size:30px;
+        padding-left: 10px;
+        padding-top: 10px;
     }
     .menu-responsive>i{
-        float:right;
-        font-size: 35px;
-        padding-top:5px;
         color:white;
+        font-size:30px;
+        padding-right:10px;
+    }
+    .menu-responsive>i:hover{
         cursor:pointer;
     }
+
+    /*   TOP   /////////////////////////////////////////////////////////////////*/
+
     .top-container{
-        margin-top:1.5cm;
+        margin-top:60px;
     }
-    
+
     /*   MENU   /////////////////////////////////////////////////////////////////*/
 
+    /* menu container */ 
+
     nav{
-        left:-100%;
-        top:58px;
         position:fixed;
-        height: calc(100vh + 58px);
+        left:-100%;
+        top:60px;
+        height:calc(100vh - 60px);
         overflow:scroll;
     }
-    nav>ul{
-        margin-top:0;
+    nav>div{
+        height:100%;
+        margin-top:1cm;
     }
-
-    /* MENU */
     .menu{
         float:none;
         width:100%;
+        overflow:scroll;
     }
-    .menu>li{
+    .menu>div{
         display:block;
-        font-size: calc(1vw + 15px);
     }
-    .menu>li:hover{
-        background:pink;
+
+    /* textos */
+    .menu>div>div>a{
+        font-size: calc(1vw + 13px);
     }
-    .menu>li>a{
-        font-size: calc(1vw + 15px);
+    /* flechas menu */
+    .arrow-down-sub-menu1{
+        display:block;
     }
+
+
+
     
-    .flecha-abajo{
-        display:contents;
-        position:relative;
-    }
+    /*   SUB-MENU1   ///////////////////////////////////////////////////*/
 
-
-
-
-
-
-    /* SUB-MENU */
-    .sub-menu{
-        position:relative;
-        border: none;
-        margin-top:1cm;
+    .sub-menu1{
         width:100%;
-        transition: none;
-        visibility: visible;
+        position:relative;
+        visibility:visible;
         display:none;
+        border-radius: 0px;
+        border:none;
     }
+    /* textos */
+    .sub-menu1>li>div{
+        height:1cm;
+        line-height:1cm;
+    }
+    .sub-menu1>li>div>a{
+        font-size: calc(1vw + 15px);
+    }
+    .sub-menu1>li>div>img{
+        font-size: calc(1vw + 15px);
+    }
+    /* flechas submenu1 */
 
-    .sub-menu2{
+    .down1 , .down2 , .down3 , .down4 , .down5 , .down6{
+        display: block;
+        position:absolute;
+        right:0;
+        padding-right:5px;
+        font-size:calc(1vw + 25px);
+        top:0px;
+        color:white;
+    } 
+
+
+    /* sub-menu-1-INDICE */
+
+    .sub-menu1>li>ul{
+        width:100%;
         position:relative;
         left:0;
-        border: none;
-        background: plum;
-        margin-top:0.5cm;
-        visibility: visible;
+        background:violet;
+        border:none;
+        border-radius:0;
+        visibility:visible;        
+    }
+    .sub-menu1-1 , .sub-menu1-2 , .sub-menu1-3 , .sub-menu1-4 , .sub-menu1-5 , .sub-menu1-6{
         display:none;
     }
-    .sub-menu>li{
-        display:flex;
-        justify-content: space-between;
+
+    .sub-menu1>li>ul>div>a{
+        font-size:calc(1vw + 15px);
+        color:white;
     }
-    .sub-menu>li>.flecha-abajo{
-        display: contents;
-    }
-    .sub-menu2>li:hover{
-        background:pink;
-    }
-    .add-display{
-        display: block;
-    }
+  
 
 
-    /* NOM */
+    /*   NOM   ///////////////////////////////////*/
 
     .nom{
         float:none;
         width:100%;
-        height:1.5cm;
-        padding:13px 0px;
+        height:1cm;
+        padding:5px 0px;
     }
     .nom>li>h1{
-        font-size:calc(1vw + 19px);
+        font-size:calc(1vw + 25px);
     }
+
+    /* clase para agregar con javascript */
+
+    .show{
+        display:block;
+    }
+    .remove{
+        display:none;
+    }
+
+
 
 
     /*   FOOTER   /////////////////////////////////////////////////////////////////*/
@@ -150,6 +187,13 @@
 
 
 @media all and(max-width:400px){
+
+    /*   MENU   /////////////////////////////////////////////////////////////////*/
+
+
+
+
+
     /*   FOOTER   /////////////////////////////////////////////////////////////////*/
     
     .footer-redes>div>a>i{

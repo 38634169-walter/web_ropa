@@ -60,19 +60,35 @@
 /*   VENTAS IMAGEN   /////////////////////////////////////////////////////////////////*/
 
 .ventas-img-container{
-    width:100%;
-    position:relative;
-    margin-top:1cm;
-}
-.ventas-img-container>img{
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
+    margin:auto;
+    margin-top:3cm;
     width:7cm;
     height:5cm;
+    border:2px solid rgb(255, 255, 255);
+    border-radius:100%;
+    background:rgba(255, 255, 255, 0.712);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+
+}
+.ventas-img-container>img{
+    width:80%;
+    height:80%;
 }
 
 /*   ROPA VENTA   /////////////////////////////////////////////////////////////////*/
+
+/*titulo venta*/
+.titulo-venta{
+    color:white;
+    font-size:calc(1vw + 18px);
+    margin-top:1cm;
+    text-align: center;
+    font-family: 'Ultra', serif;
+    text-shadow:2px 2px 12px white;
+}
+
 
 .ropa-container{
     width:100%;
