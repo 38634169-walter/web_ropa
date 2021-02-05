@@ -8,8 +8,6 @@
         width:95%;
         height:8cm;
     }
-
-    
     .slider>ul>li>h1{
         font-size: calc(1vw + 10px);
     }

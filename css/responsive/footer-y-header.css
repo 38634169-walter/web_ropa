@@ -21,6 +21,9 @@
         padding-top: 10px;
     }
     .menu-responsive>i{
+        position:absolute;
+        right:0;
+        padding-right:10px;
         color:white;
         font-size:30px;
         padding-right:10px;
@@ -28,6 +31,12 @@
     .menu-responsive>i:hover{
         cursor:pointer;
     }
+    /* icono x*/
+
+    .x-icono-responsive{
+        display:none;
+    }
+
 
     /*   TOP   /////////////////////////////////////////////////////////////////*/
 

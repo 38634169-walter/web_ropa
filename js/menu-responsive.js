@@ -4,22 +4,28 @@ let num = 0;
 let todo = 0;
 
 function mostrar_menu(){
+    /* ICONOS MENU RESPONSIVE */ 
     
     $('.menu-icon-responsive').click(function(){
-        if(num == 0){
-            $('.nav').animate({
-                left:'0'
-            });
-            num = 1;
-        }
-        else{
-            $('.nav').animate({
-                left:'-100%'
-            });
-            num = 0;
-        }
+        
+        $('.menu-icon-responsive').toggleClass('remove');
+        $('.x-icono-responsive').toggleClass('show');
+        $('.nav').animate({
+            left:'0'
+        });
+    
     });
 
+    $('.x-icono-responsive').click(function(){
+        $('.menu-icon-responsive').toggleClass('remove');
+        $('.x-icono-responsive').toggleClass('show');
+        $('.nav').animate({
+            left:'-100%'
+        });
+    
+    });
+
+    /* FLECHAS MENU Y SUBMENU */ 
     $('.dropbtn1').click(function(){
         $('.sub-menu1').toggleClass('show');
         $('.arrow-down-sub-menu1').toggleClass('remove');
