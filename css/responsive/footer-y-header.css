@@ -1,5 +1,10 @@
 @media all and (max-width:800px){
+    /*   TOP   /////////////////////////////////////////////////////////////////*/
 
+    .top-container{
+        margin-top:60px;
+    }
+    
     /*   MENU-RESPONSIVE   /////////////////////////////////////////////////////////////////*/
     
     .menu-responsive{ 
@@ -37,13 +42,6 @@
         display:none;
     }
 
-
-    /*   TOP   /////////////////////////////////////////////////////////////////*/
-
-    .top-container{
-        margin-top:60px;
-    }
-
     /*   MENU   /////////////////////////////////////////////////////////////////*/
 
     /* menu container */ 
@@ -66,6 +64,11 @@
     }
     .menu>div{
         display:block;
+    }
+
+    .menu>div>div>a:hover{
+        color:white;
+        background: rgb(250, 175, 250);
     }
 
     /* textos */
@@ -97,7 +100,9 @@
         line-height:1cm;
     }
     .sub-menu1>li>div:hover{
-        background:none;
+        
+        color:white;
+        background: rgb(97, 48, 97);
     }
     .sub-menu1>li>div>a{
         font-size: calc(1vw + 15px);
@@ -136,6 +141,10 @@
     .sub-menu1>li>ul>div>a{
         font-size:calc(1vw + 15px);
         color:white;
+    }
+    .sub-menu1>li>ul>div>a:hover{
+        color:white;
+        background: rgb(250, 175, 250);
     }
   
 

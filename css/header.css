@@ -166,7 +166,7 @@ nav>div{
     align-items: center;
 }
 .sub-menu1>li>div:hover{
-    background:violet;
+    background:rgb(185, 100, 185);
 }
 .sub-menu1>li>div>a{
     padding-left:20px;
@@ -225,7 +225,7 @@ nav>div{
     width:100%;
 }
 .sub-menu1>li>ul>div>a:hover{
-    color:aquamarine;
+    background:rgb(185, 100, 185);
     padding-left:30px;
 }
 
