@@ -109,10 +109,11 @@ footer{
 .bottom-text{
     text-align: center;
     background: rgba(0, 0, 0, 0.87);
+    padding:10px;
     border:2px solid rgba(255, 0, 0, 0);
 }
-.bottom-text>h1{
-    padding:0px 15px;
+.bottom-text>p{
+    margin:0;
     color:white;
     font-size:calc(1vw + 5px);
 }

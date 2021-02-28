@@ -199,8 +199,7 @@
 
     /* BOTTOM-FOOTER */
 
-    .bottom-text>h1{
-        padding:9px 0px;
+    .bottom-text>p{
         font-size:calc(1vw + 7px);
     }
 
