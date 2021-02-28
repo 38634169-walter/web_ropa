@@ -100,9 +100,8 @@
         line-height:1cm;
     }
     .sub-menu1>li>div:hover{
-        
         color:white;
-        background: rgb(97, 48, 97);
+        background: none;
     }
     .sub-menu1>li>div>a{
         font-size: calc(1vw + 15px);
@@ -209,12 +208,6 @@
 
 
 @media all and(max-width:400px){
-
-    /*   MENU   /////////////////////////////////////////////////////////////////*/
-
-
-
-
 
     /*   FOOTER   /////////////////////////////////////////////////////////////////*/
     

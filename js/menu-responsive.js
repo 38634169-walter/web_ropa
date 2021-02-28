@@ -10,9 +10,13 @@ function menu(){
     $('.menu-icon-responsive').click(mostrar);
 
     $('.x-icono-responsive').click(ocultar);
-    $('.top-container').click(ocultar);
-    $('section').click(ocultar);
-    $('footer').click(ocultar);
+    
+    if ($(window).width() <= 800){
+        
+        $('.top-container').click(ocultar);
+        $('section').click(ocultar);
+        $('footer').click(ocultar);
+    }
 
     /* FLECHAS MENU Y SUBMENU */ 
     $('.dropbtn1').click(flechas_menu);
